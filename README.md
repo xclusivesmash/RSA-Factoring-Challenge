@@ -17,6 +17,9 @@
 1. **rsa** - RSA Laboratories states that: for each RSA number `n`, there exist prime numbers `p` and `q` such that `n = p × q`. The problem is to find these two primes, given only `n`.
 <br>
 
+**NOTE**: the **rsa_python** file can also be used to solve problem 1. It is used mainly as an indication that the factoring problem can consume a lot of computing resources.
+<br>
+
 ## Author
 * Siphamandla Matshiane, [![Twitter](http://i.imgur.com/wWzX9uB.png)](https://twitter.com/sbumatshiane916)
 
