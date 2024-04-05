@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# factorization happens through the 'factor' executable
+
+
+file=$1 # argument one
+while read -r num
+do
+	my_factors=($(factor $num))
+	echo "$num=$(($num/${my_factors[1]}))*${my_factors[1]}"
+done < $file

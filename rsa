@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# RSA Factoring problem.
+
+
+file=$1
+while read -r num
+do
+	factors=($(factor $num))
+	echo "$num=${factors[2]}*${factors[1]}"
+done < $file
